@@ -1,0 +1,33 @@
+﻿var Settings =
+{
+  Mongo:
+  {
+    ConnectionString: "mongodb://{mongo-server}",
+    Options:
+    {
+      server:
+      {
+        auto_reconnect: true,
+        poolSize: 10,
+        socketOptions:
+        {
+          connectTimeoutMS: 500,
+          socketTimeoutMS: 500
+        }
+      }
+    }
+  },
+  Smtp:
+  {
+    host: "{smtp-server}",
+    password: "",
+    port: "",
+    ssl: true,
+    user: ""
+  },
+  StatsD:
+  {
+    Host: "{statsd-server}",
+    Port: 8125
+  }
+};
